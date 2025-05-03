@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Tema escuro conforme imagens */
+    --background: 0 0% 10%; /* #1a1a1a */
+    --foreground: 0 0% 100%; /* #ffffff */
+    --card: 0 0% 12%; /* #1f1f1f */
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 84 100% 50%; /* #beff00 - Verde neon exato das imagens */
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 84 100% 45%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 84 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* #1a1a1a */
+    --foreground: 0 0% 100%; /* #ffffff */
+    --card: 0 0% 12%; /* #1f1f1f */
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 84 100% 50%; /* #beff00 - Verde neon exato das imagens */
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 84 100% 45%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 84 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-[#1a1a1a] text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold;
+  }
+  
+  .comprar-button {
+    @apply bg-[#beff00] text-[#1a1a1a] font-medium py-2 px-8 rounded-full;
+  }
+  
+  .missao-tag {
+    @apply border border-[#beff00] text-[#beff00] px-4 py-1 rounded-full inline-flex text-sm font-medium;
+  }
+  
+  .produto-card {
+    @apply bg-[#272727] rounded-lg overflow-hidden;
+  }
+  
+  .bg-grid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(60 60 60 / 0.1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+    @apply bg-[#1a1a1a];
+  }
+}
