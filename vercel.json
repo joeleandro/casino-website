@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/server.js" },
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "buildCommand": "node vercel.js",
+  "outputDirectory": "dist/public",
+  "installCommand": "npm install",
+  "framework": "vite"
+}
